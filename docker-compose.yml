@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:11.1-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: django_google_api
+      POSTGRES_USER: django_google_api
+      POSTGRES_PASSWORD: django_google_api
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  db:
