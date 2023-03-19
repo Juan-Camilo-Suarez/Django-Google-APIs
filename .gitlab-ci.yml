@@ -8,9 +8,7 @@ before_script:
   - poetry config virtualenvs.create false
   - poetry install
 
-
 lint:
   stage: lint
   script:
     - black . --check --diff
-
