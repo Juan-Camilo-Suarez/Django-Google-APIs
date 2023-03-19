@@ -21,8 +21,8 @@ from django.urls import path
 from django_google_api_project import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('main.urls')),
+    path("admin/", admin.site.urls),
+    path("", include("main.urls")),
 ]
 
 # esta linea hace la funcion que hace un nginx servir archivos estaticos
