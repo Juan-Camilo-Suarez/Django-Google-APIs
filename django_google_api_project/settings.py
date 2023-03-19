@@ -128,3 +128,9 @@ RECAPTCHA_SECRET_KEY = os.environ.get("RECAPTCHA_SECRET_KEY")
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# are settings that are used to specify the URLs that the user should be redirected to when they try to access certain views or when they log in or log out of the application.
+
+LOGIN_URL = "users:sign-in"
+LOGIN_REDIRECT_URL = "users:account"
+LOGOUT_REDIRECT_URL = "users:sign-in"
