@@ -125,7 +125,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn")
 
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
-RECAPTCHA_KEY = os.environ.get("RECAPTCHA_KEY")
+RECAPTCHA_PUBLIC_KEY = os.environ.get("RECAPTCHA_PUBLIC_KEY")
 RECAPTCHA_SECRET_KEY = os.environ.get("RECAPTCHA_SECRET_KEY")
 
 # Default primary key field type
